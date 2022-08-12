@@ -1,14 +1,23 @@
 main {
-    padding-top: 32px;
+    padding-top: 2rem;
+}
+
+.background {
+    background: url("../images/plans-background.jpg") center/cover;
+    filter: grayscale(40%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -1;
 }
 
 .package-container {
     width: 80%;
     border: 4px #0e4f1f solid;
     border-left: none;
-    
-
-    margin: 16px 0;
+    margin: 1rem 0;
+    position: relative;
+    z-index: 0;
 }
 
 .package-container:hover,
@@ -21,7 +30,7 @@ main {
 
 
 .package {
-    padding: 32px;
+    padding: 2rem;
     text-decoration: none;
     color: inherit;
     display: block;
@@ -30,14 +39,24 @@ main {
 
 .package-title {
     color: black;
-    margin-left: 32px;
+    margin-left: 2rem;
 }
 
-
+.package__badge {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    margin: 1.2rem;
+    font-size: 0.75rem;
+    color: white;
+    background: #ff5454;
+    padding: 0.5rem;
+    z-index: 10;
+}
 
 .package-subtitle {
     color: #979797;
-    margin-left: 32px;
+    margin-left: 2remx;
 
 }
 
@@ -45,8 +64,8 @@ main {
     border: #0e4f1f solid 1px;
     background-color: white;
     color: #0e4f1f;
-    padding: 16px;
-    margin: 32px;
+    padding: 1rem;
+    margin: 2rem;
     font-size: 20px;
 
 }
