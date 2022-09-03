@@ -12,6 +12,11 @@ body {
 
 }
 
+main {
+    min-height: calc(100vh - 3.5rem -8rem);
+    margin-top: 3.5rem;
+}
+
 .backdrop {
     position: fixed;
     display: none;
@@ -61,7 +66,7 @@ body {
     margin: 0.6rem 0;
   }
 
-@media (min-width: 40reM) {
+@media (min-width: 40rem) {
     .toggle-button {
         display: none;
     }
@@ -71,13 +76,13 @@ body {
     color: #0e4f1f;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.5rem;
+    height: 2.5rem;
     display: inline-block;
     vertical-align: middle;
 }
 
 .main-header__brand img {
-    height: 2.5rem;
+    height: 100%
 }
 
 
